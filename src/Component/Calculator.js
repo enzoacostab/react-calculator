@@ -115,12 +115,12 @@ class Calculator extends React.Component{
         <div className='Calculator'>
         <div className='row'>
         <div className='col-sm-12 d2 t'><label id='display2'>{this.state.res}</label></div>
-        <div className='col-sm-12' id='line'><label id='display'>{this.state.input}</label></div>
+        <div className='col-sm-12 t' id='line'><label id='display'>{this.state.input}</label></div>
         </div>
         <div className='row'>
-        <div className='col-sm-3'><button className='btn1 c' id='clear' onClick={this.clearClick}><i class='fa-solid fa-c'></i></button></div>
-        <div className='col-sm-3'><button className='btn1 c' onClick={this.delClick}><i class='fa-solid fa-delete-left'></i></button></div>
-        <div className='col-sm-3'><button className='btn1 c' value={'%'} onClick={this.opClick}><i class='fa-solid fa-percent'></i></button></div>
+        <div className='col-sm-3'><button className='btn1 c' id='clear' onClick={this.clearClick}><i className='fa-solid fa-c'></i></button></div>
+        <div className='col-sm-3'><button className='btn1 c' onClick={this.delClick}><i className='fa-solid fa-delete-left'></i></button></div>
+        <div className='col-sm-3'><button className='btn1 c' value={'%'} onClick={this.opClick}><i className='fa-solid fa-percent'></i></button></div>
         <div className='col-sm-3'><button className='btn1 c' value={'/'} id='divide' onClick={this.opClick}><i className='fa-solid fa-divide'></i></button></div>
         </div>
         <div className='row'>
@@ -139,7 +139,7 @@ class Calculator extends React.Component{
         <div className='col-sm-3'><button className='btn1 t' id='one' value={1} onClick={this.handleClick}>1</button></div>
         <div className='col-sm-3'><button className='btn1 t' id='two' value={2} onClick={this.handleClick}>2</button></div>
         <div className='col-sm-3'><button className='btn1 t' id='three' value={3} onClick={this.handleClick}>3</button></div>
-        <div className='col-sm-3'><button className='btn1 c' value={'*'} id='multiply' onClick={this.opClick}><i class='fa-solid fa-xmark'></i></button></div>
+        <div className='col-sm-3'><button className='btn1 c' value={'*'} id='multiply' onClick={this.opClick}><i className='fa-solid fa-xmark'></i></button></div>
         </div>
         <div className='row'>
         <div className='col-sm-3'><button className='btn1 t' onClick={this.Theme}><i className='fa-solid fa-toggle-off b'></i></button></div>
